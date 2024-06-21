@@ -5,13 +5,13 @@ using Note.Api.Models.Request;
 namespace Note.Api.Services.Interface;
 public interface IEntryService
 {
-    public List<Entry> GetAllEntries();
+    public Task<List<Entry>> GetAllEntries();
 
-    public Entry CreateEntry(EntryRequest entryRequest);
+    public Task<Entry> CreateEntry(EntryRequest entryRequest);
 
-    public Entry GetEntryByID(int id);
+    public Task<Entry> GetEntryByID(int id);
 
-    public Entry UpdateEntryById(int id, EntryRequest entryRequest);
+    public Task<Entry> UpdateEntryById(int id, EntryRequest entryRequest);
 
-    public Entry DeleteEntryById(int id);
+    public Task<Entry> DeleteEntryById(int id);
 }
