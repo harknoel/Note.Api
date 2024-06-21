@@ -1,16 +1,12 @@
 using Note.Api.Models;
 using Microsoft.EntityFrameworkCore;
-using Note.Api.Models.Interface; 
+using Note.Api.Models.Interface;
 using Note.Api.Exceptions;
 
 namespace Note.Api.Data.Models;
-public class DataContext : DbContext
+public class DataContext(DbContextOptions<DataContext> options) : DbContext(options)
 {
-    public DataContext(DbContextOptions<DataContext> options) : base(options)
-    {
-
-    }
-    public DbSet<Entry> Entries => Set<Entry>(); 
+    public DbSet<Entry> Entries => Set<Entry>();
 
     public async Task<T> FindItemById<T>(int id) where T : class, IIdentifiable
     {

@@ -32,7 +32,7 @@ public static class EntryEndpoint
 
         route.MapGet("/all", async (EntryService entryService) => await entryService.GetAllEntries());
 
-        route.MapPost("/create",async (EntryService entryService, EntryRequest entryrequest) => await entryService.CreateEntry(entryrequest));
+        route.MapPost("/create", async (EntryService entryService, EntryRequest entryrequest) => await entryService.CreateEntry(entryrequest));
 
         route.MapGet("/get/{id}", async (int id, EntryService entryService) =>
         {

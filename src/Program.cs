@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Note.Api.Endpoints;
-using Note.Api.Data;
 using Note.Api.Services;
 using Note.Api.Data.Models;
 
