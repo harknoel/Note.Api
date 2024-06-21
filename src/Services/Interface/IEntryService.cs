@@ -1,5 +1,6 @@
 using Note.Api.Models;
-using Note.Api.Models.DTO;
+using Note.Api.Models.Interface;
+using Note.Api.Models.Request;
 
 namespace Note.Api.Services.Interface;
 public interface IEntryService

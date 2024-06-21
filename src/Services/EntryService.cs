@@ -1,6 +1,6 @@
 using Note.Api.Data;
 using Note.Api.Models;
-using Note.Api.Models.DTO;
+using Note.Api.Models.Request;
 using Note.Api.Services.Interface;
 
 namespace Note.Api.Services;
@@ -35,7 +35,7 @@ public class EntryService(Database database) : IEntryService
 
     public Entry UpdateEntryById(int id, EntryRequest entryRequest)
     {
-        Entry? entry = database.FindItemById(_entries,id);
+        Entry? entry = database.FindItemById(_entries, id);
 
         entry.Title = entryRequest.Title;
         entry.Content = entryRequest.Content;

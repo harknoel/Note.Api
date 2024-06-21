@@ -1,4 +1,4 @@
-namespace Note.Api.Models.DTO;
+namespace Note.Api.Models.Request;
 
 public class EntryRequest
 {
