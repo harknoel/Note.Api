@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Note.Api.Models.Interface;
 using Note.Api.Exceptions;
 
-namespace Note.Api.Data.Models;
+namespace Note.Api.Data;
 public class DataContext(DbContextOptions<DataContext> options) : DbContext(options)
 {
     public DbSet<Entry> Entries => Set<Entry>();

@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Note.Api.Data.Models;
+using Note.Api.Data;
 using Note.Api.Models;
 using Note.Api.Models.Request;
 using Note.Api.Services.Interface;

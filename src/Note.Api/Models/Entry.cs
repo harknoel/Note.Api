@@ -1,6 +1,6 @@
 using Note.Api.Models.Interface;
-using System.ComponentModel.DataAnnotations; // For [Key] attribute
-using System.ComponentModel.DataAnnotations.Schema; // For [DatabaseGenerated] attribute
+using System.ComponentModel.DataAnnotations; 
+using System.ComponentModel.DataAnnotations.Schema; 
 
 namespace Note.Api.Models;
 
